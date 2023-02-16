@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <main>
+        <h1 class="text-center mb-5 font-medium text-3xl text-blue-600 pt-10">Money Master</h1>
+        <section class=" grid lg:grid-cols-2 px-10 gap-10">
+            <div class="">
+                <img class="" src="abc.png" alt="">
+            </div>
+            <div class="">
+                <!-- js part -->
+                <div class="text-center py-5">
+                    <h1 class="pb-5 text-2xl text-bold text-black-500">Income</h3>
+                    <h3>income: <input id="input-income-field" class="input input-bordered input-sm w-full max-w-xs" /></h1>
+
+                    <h1 class="p-5 text-2xl text-bold text-black-500">Expenses</h1>
+                    <h3>Food: <input id="input-food-field" class="input input-bordered input-sm w-full max-w-xs" /></h3>
+
+                    <h3 class="p-5">Rent: <input id="input-rent-field" class="input input-bordered input-sm w-full max-w-xs" /></h3>
+
+                    <h3>Cloths: <input id="input-cloths-field" class="input input-bordered input-sm w-full max-w-xs" /></h3>
+
+                    <div class="pt-5">
+                        <button id="calculate-btn" class="btn btn-wide btn-success text-white">Calculate</button>
+                    </div>
+
+                    <h2 class="py-5 text-2xl text-bold text-black-500">Total Expenses: <span id="total-expenses">0</span> </h2>
+                    <h2 class="text-2xl text-bold text-black-500 pb-5">Balance: <span id="total-balance">0</span> </h2>
+                    
+                    <div class="flex justify-center items-center">
+                        <h2>Save : <input id="input-save-field" type="text" class="input input-bordered input-sm w-28 max-w-xs"> </h2>
+                        <h4 class="px-4">%</h4>
+                        <button id="save-btn" class="btn w-28 btn-success text-white">Save</button>
+                    </div>
+                    <h2 class="text-2xl text-bold text-black-500 py-5">Saving Amount: <span id="save-Amount">0</span> </h2>
+                    <h2 class="text-2xl text-bold text-black-500 pt-5 pb-10">Remaining Balance: <span id="Remain-Balance">0</span> </h2>
+                   
+                </div>
+        </section>
+    </main>
+    </div>
+  <script src="js/money.js"></script>
+</body>
+
+</html>
